@@ -6,7 +6,7 @@
 /*   By: mel-hach <mel-hach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 13:42:59 by mel-hach          #+#    #+#             */
-/*   Updated: 2023/11/29 15:50:59 by mel-hach         ###   ########.fr       */
+/*   Updated: 2023/11/29 16:07:17 by mel-hach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,13 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	ret = NULL;
 	while (lst)
 	{
-		current = ft_lstnew(f(lst->content));
+		current = ft_lstnew(NULL);
 		if (!current)
 		{
-			ft_lstclear(&current, del);
+			ft_lstclear(&ret, del);
 			return (NULL);
 		}
+		current->content = f(lst->content);
 		ft_lstadd_back(&ret, current);
 		lst = lst->next;
 	}
