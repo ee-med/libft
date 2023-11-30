@@ -6,7 +6,7 @@
 /*   By: mel-hach <mel-hach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 01:25:59 by mel-hach          #+#    #+#             */
-/*   Updated: 2023/11/29 13:49:27 by mel-hach         ###   ########.fr       */
+/*   Updated: 2023/11/30 13:44:39 by mel-hach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <stdlib.h>
-# include <limits.h>
 
 typedef struct s_list
 {

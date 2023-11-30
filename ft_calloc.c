@@ -6,7 +6,7 @@
 /*   By: mel-hach <mel-hach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 04:51:22 by mel-hach          #+#    #+#             */
-/*   Updated: 2023/11/26 18:55:44 by mel-hach         ###   ########.fr       */
+/*   Updated: 2023/11/30 14:24:14 by mel-hach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*s;
 
-	if ((int) count < 0 && (int) size < 0)
+	if ((int) count < 0 || (int) size < 0)
 		return (NULL);
 	s = malloc(count * size);
 	if (!s)

@@ -6,7 +6,7 @@
 /*   By: mel-hach <mel-hach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 11:49:25 by mel-hach          #+#    #+#             */
-/*   Updated: 2023/11/24 11:59:41 by mel-hach         ###   ########.fr       */
+/*   Updated: 2023/11/30 14:33:41 by mel-hach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	char			*ret;
 	char			*str;
 
-	if (!s)
+	if (!s || !f)
 		return (0);
 	ret = (char *)malloc(ft_strlen(s) + 1);
-	str = (char *)s;
 	if (!ret)
 		return (0);
+	str = (char *)s;
 	i = 0;
 	while (str[i])
 	{

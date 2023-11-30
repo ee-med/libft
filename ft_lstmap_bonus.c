@@ -6,12 +6,11 @@
 /*   By: mel-hach <mel-hach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 13:42:59 by mel-hach          #+#    #+#             */
-/*   Updated: 2023/11/29 16:07:17 by mel-hach         ###   ########.fr       */
+/*   Updated: 2023/11/30 13:05:23 by mel-hach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
